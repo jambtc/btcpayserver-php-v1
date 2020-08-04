@@ -105,7 +105,7 @@ class CurlAdapter implements AdapterInterface
         if (gethostname() == 'CGF6135T'){
           //MODIFICHE BY SERGIO CASIZZONE X AGENZIA ENTRATE
 
-          include ('proxy.php');
+          include (dirname(__FILE__).'/proxy.php');
           $array = array(
               CURLOPT_URL            => $request->getFullUri(),
               CURLOPT_CUSTOMREQUEST  => $request->getMethod(),
