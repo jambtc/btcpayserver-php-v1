@@ -118,7 +118,7 @@ class CurlAdapter implements AdapterInterface
               CURLOPT_FORBID_REUSE   => 1,
               CURLOPT_FRESH_CONNECT  => 1,
               CURLOPT_HEADER         => true,
-              //MODIFICHE BY SERGIO CASIZZONE X bypassare PROXY 
+              //MODIFICHE BY SERGIO CASIZZONE X bypassare PROXY
               CURLOPT_HTTPPROXYTUNNEL => TRUE,
               CURLOPT_PROXY            => $proxy,
               CURLOPT_PROXYUSERPWD  => $proxydata
